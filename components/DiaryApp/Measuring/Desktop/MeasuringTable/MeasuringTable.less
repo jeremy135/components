@@ -1,0 +1,27 @@
+@import "../../../../Less/build";
+
+.MeasuringTable{
+
+  /* Описание переменной */
+  @colorOtTableBorder: green;
+  /* Размер шрифта шапки таблицы*/
+  @textSize: 15px;
+
+  &_BlockName{
+
+    color: @colorOtTableBorder;
+
+    &__elementName{
+
+      color: @colorOtTableBorder;
+
+    }
+
+    &-modificator-big{
+
+      font-size: @textSize;
+
+    }
+  }
+
+}

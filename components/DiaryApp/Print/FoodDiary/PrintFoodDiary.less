@@ -1,0 +1,46 @@
+@import "../../../Less/build";
+
+
+.PrintFoodDiary{
+
+  &_Item_Unit{
+    padding-left: 2px;
+    color: rgba(0, 0, 0, 0.46);
+  }
+  table{
+    border: 1px solid #E5E5E5;
+    width: 750px;
+
+    tr{
+      border: 1px solid #E5E5E5;
+      vertical-align: middle;
+
+      td{
+        padding: 2px;
+        border: 1px solid #E5E5E5;
+      }
+
+      td:nth-child(n+2) {
+        text-align: right;
+      }
+
+      th{
+        color: #e74c3c;
+        font-weight: bold;
+        font-size: 11px;
+        text-transform: uppercase;
+        background-color: #F2F2F2;
+
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #E5E5E5;
+      }
+    }
+
+    tr:nth-child(2n) {
+      background: #f2f2f2;
+    }
+
+
+  }
+}

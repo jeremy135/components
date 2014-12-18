@@ -1,0 +1,14 @@
+.DevTopMenu {
+  background-color: #e74c3c;
+  height: 25px;
+  color: white;
+}
+.DevTopMenu a {
+  line-height: 25px;
+  color: white;
+  padding-right: 15px;
+}
+.DevTopMenu a :hover,
+.DevTopMenu a :visited {
+  color: white;
+}

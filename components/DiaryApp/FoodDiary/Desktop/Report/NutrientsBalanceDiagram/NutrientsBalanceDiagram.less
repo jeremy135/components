@@ -1,0 +1,70 @@
+.NutrientsBalanceDiagram{
+
+  font-size: 1em;
+
+
+  &_Table{
+    display: table;
+    border-collapse: collapse;
+    min-width: 450px;
+  }
+
+  &_Column{
+    display: table-column;
+    text-align: center ;
+    width: 50%;
+  }
+
+  &_Row{
+    display: table-row;
+    height: 19px;
+    cursor: pointer;
+
+    &__cell{
+      display: table-cell;
+    }
+
+
+
+    &__name{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: right;
+      padding-right: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &__bar{
+      display: table-cell;
+      vertical-align: middle;
+      width: 120px;
+      border: 1px solid #E5E5E5;
+      position: relative;
+
+      :after {
+        display: table;
+        clear: both;
+        content: '';
+      }
+
+      &__inner{
+        width: 51%;
+        height: 16px;
+        float: left;
+        background-color: #2EB838;
+        content: '';
+      }
+    }
+
+    &__value{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: left;
+      padding-left: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+}

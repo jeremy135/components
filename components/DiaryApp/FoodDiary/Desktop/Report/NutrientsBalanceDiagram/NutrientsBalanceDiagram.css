@@ -1,0 +1,56 @@
+.NutrientsBalanceDiagram {
+  font-size: 1em;
+}
+.NutrientsBalanceDiagram_Table {
+  display: table;
+  border-collapse: collapse;
+  min-width: 450px;
+}
+.NutrientsBalanceDiagram_Column {
+  display: table-column;
+  text-align: center ;
+  width: 50%;
+}
+.NutrientsBalanceDiagram_Row {
+  display: table-row;
+  height: 19px;
+  cursor: pointer;
+}
+.NutrientsBalanceDiagram_Row__cell {
+  display: table-cell;
+}
+.NutrientsBalanceDiagram_Row__name {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.NutrientsBalanceDiagram_Row__bar {
+  display: table-cell;
+  vertical-align: middle;
+  width: 120px;
+  border: 1px solid #E5E5E5;
+  position: relative;
+}
+.NutrientsBalanceDiagram_Row__bar :after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.NutrientsBalanceDiagram_Row__bar__inner {
+  width: 51%;
+  height: 16px;
+  float: left;
+  background-color: #2EB838;
+  content: '';
+}
+.NutrientsBalanceDiagram_Row__value {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+}
