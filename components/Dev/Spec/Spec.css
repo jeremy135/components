@@ -1,0 +1,10 @@
+.Spec {
+  margin: 0 auto 0 auto;
+  width: 1000px;
+}
+.Spec .SpecShow {
+  margin-left: 5px;
+  color: #0000ee;
+  text-decoration: underline;
+  cursor: pointer;
+}

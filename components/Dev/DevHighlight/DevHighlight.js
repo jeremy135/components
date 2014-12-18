@@ -48,11 +48,11 @@
 
             var lResult = '';
             if(this.state.hide === true){
-                lResult = React.createElement("div", {onClick: this.show}, "Показать");
+                lResult = React.createElement("div", {className: "DevHighlightLink", onClick: this.show}, "Показать");
             }else{
                 lResult = (
                     React.createElement("div", null, 
-                        React.createElement("div", {onClick: this.show}, "Скрыть"), 
+                        React.createElement("div", {className: "DevHighlightLink", onClick: this.show}, "Скрыть"), 
                         React.createElement("pre", {ref: "theInput"}, lText)
                     )
                 );
@@ -61,7 +61,7 @@
             return (
 
                 React.createElement("div", {className: "DevHighlight"}, 
-                lResult
+                    lResult
                 )
             );
         }

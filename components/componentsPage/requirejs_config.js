@@ -1,6 +1,6 @@
 requirejs.config({
-    //baseUrl : "../../../",
-    baseUrl : "http://localhost:63343/components/",
+    baseUrl : "../../",
+    //baseUrl : "http://localhost:63343/components/",
     urlArgs: "bust=" + (new Date()).getTime(),
     paths: {
         components: "components",

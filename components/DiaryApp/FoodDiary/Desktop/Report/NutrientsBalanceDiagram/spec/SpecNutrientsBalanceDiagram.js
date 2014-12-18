@@ -2,11 +2,12 @@
     'use strict';
     if (typeof define === 'function' && define.amd) {
         define([
+            'components/Dev/Spec/Spec',
             'components/DiaryApp/FoodDiary/Desktop/Report/NutrientsBalanceDiagram/NutrientsBalanceDiagram',
             'components/Dev/DevHighlight/DevHighlight'
         ], factory);
     }
-}(this, function(NutrientsBalanceDiagram, DevHighlight, ViewPort) {
+}(this, function(Spec, NutrientsBalanceDiagram, DevHighlight, ViewPort) {
     'use strict';
     var specPrintFoodDiary = React.createClass({displayName: 'specPrintFoodDiary',
 
@@ -24,6 +25,8 @@
 
             return (
                 React.createElement("div", null, 
+                    React.createElement(Spec, null
+                    ), 
                     React.createElement("div", {className: "container"}, 
                         React.createElement("div", null, "Диаграмма нутриетного баланса"), 
                         React.createElement("div", null, "Спецификация: components/DiaryApp/Report/NutrientsBalanceDiagram/spec/SpecNutrientsBalanceDiagram.jsx"), 

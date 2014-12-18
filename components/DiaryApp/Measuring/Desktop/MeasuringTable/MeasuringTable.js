@@ -87,7 +87,7 @@
                         /*Сколько осталось до цели*/
                         toPurpose: React.PropTypes.number.isRequired,
                         /*Достигнутый результат человоком:  Разница между целью и начальным значением*/
-                        result: React.PropTypes.string,
+                        result: React.PropTypes.number,
                         /*Подсказка при навадении на ячейку*/
                         tip:React.PropTypes.string
 
@@ -145,9 +145,12 @@
             return {}
         },
         render: function() {
+
+
             return (
                 React.createElement("div", {className: "MeasuringTable"}, 
-                "реализовать компонет"
+                "реализовать компонет:", 
+                React.createElement("pre", null, JSON.stringify(this.props, undefined, 4))
                 )
             );
         }

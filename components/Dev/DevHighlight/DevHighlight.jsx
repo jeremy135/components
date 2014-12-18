@@ -48,11 +48,11 @@
 
             var lResult = '';
             if(this.state.hide === true){
-                lResult = <div onClick={this.show}>Показать</div>;
+                lResult = <div className="DevHighlightLink" onClick={this.show}>Показать</div>;
             }else{
                 lResult = (
                     <div>
-                        <div  onClick={this.show}>Скрыть</div>
+                        <div className="DevHighlightLink" onClick={this.show}>Скрыть</div>
                         <pre ref="theInput">{lText}</pre>
                     </div>
                 );
@@ -61,7 +61,7 @@
             return (
 
                 <div className="DevHighlight">
-                {lResult}
+                    {lResult}
                 </div>
             );
         }
